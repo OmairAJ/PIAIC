@@ -6,6 +6,12 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
 
+[project.scripts]
+simpleapp = "main:main"
+
+[tool.uv]
+package = true
+
 [dependency-groups]
 dev = [
     "black>=25.1.0",
